@@ -1,7 +1,8 @@
+from trystack.model import Project
 from trystack.util import jsonify
 class ProjectController:
     def get_projects():
-        return jsonify(status=501,)
+        return jsonify(status=501)
     
     def get_project(project_id):
        return jsonify(status=501)
