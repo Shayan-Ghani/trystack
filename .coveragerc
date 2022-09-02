@@ -1,0 +1,5 @@
+[run]
+#what is the source package
+source = trystack
+# enables conditional testing
+branch = true

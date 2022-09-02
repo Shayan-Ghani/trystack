@@ -1,4 +1,3 @@
-from os import RTLD_NOW
 from trystack.util import now
 from trystack.trystack import db
 from trystack.util import jsonify
@@ -18,7 +17,7 @@ class ProjectController:
             return jsonify(status=500)
         projects_schema = ProjectSchema(many=True)
         return jsonify(
-            {"projects": projects_schema.dump(projects)} #provides the state of jsonify
+            {"projects": projects_schema.dump(projects) } #provides the state of jsonify
         )
     @json_required    
     def get_project(project_id):
