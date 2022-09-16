@@ -4,6 +4,7 @@ from datetime import datetime
 
 from trystack.util import now
 
+
 def test_now():
     result = now()
     current_datetime = datetime.now()
