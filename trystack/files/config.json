@@ -1,0 +1,13 @@
+{
+
+    "ENV" : "production",
+    "DEBUG" : true,
+    "TESTING" : true,
+    "SQLALCHEMY_DATABASE_URI" : "mysql+pymysql://root:test@localhost:3306/trystack",
+    "SQLALCHEMY_RECORD_MODIFICATIONS" : true,
+    "SQLALCHEMY_RECORD_QUERIES": true,
+    "SQLALCHEMY_ECHO" : true,
+    "DEFAULT_PROJECT_STATUS": 0
+
+
+}

@@ -10,3 +10,13 @@ def app():
 @pytest.fixture
 def client(app):
     return app.test_client()
+
+@pytest.fixture
+def config_client(app):
+    return app.config
+
+
+@pytest.fixture
+def app_client():
+    return create_app
+
