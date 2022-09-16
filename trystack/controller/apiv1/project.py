@@ -6,6 +6,7 @@ from trystack.model import Project
 from trystack.schema.apiv1 import ProjectSchema
 from flask import request
 
+
 class ProjectController:
     @json_required
     def get_projects():
@@ -51,6 +52,9 @@ class ProjectController:
             return jsonify(status=500)
         if project is not None:
             return jsonify(status=409)
+            
+        if not requested_data["name"].strip():
+            return jsonify(status=400)    
         project = Project(name=requested_data["name"])
         db.session.add(project)
         
