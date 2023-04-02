@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.9-slim-buster
 
 LABEL maintainer="Shayan Ghani <shayanghani1384@gmail.com>"
 
@@ -10,7 +10,7 @@ WORKDIR /opt/src
 
 COPY requirements.txt .
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
